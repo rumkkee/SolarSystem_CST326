@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotator : MonoBehaviour
+public class RotateAroundSelf : MonoBehaviour
 {
     [SerializeField] private float yawRotationPerSecond;
 
