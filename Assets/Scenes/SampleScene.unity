@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 99598638}
   - component: {fileID: 99598637}
   - component: {fileID: 99598636}
+  - component: {fileID: 99598639}
   - component: {fileID: 99598635}
   m_Layer: 0
   m_Name: Jupiter
@@ -156,7 +157,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1813397816}
+  m_Father: {fileID: 1204270205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &99598635
 MonoBehaviour:
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yawRotationPerSecond: 20
+  yawRotationPerSecond: 100
 --- !u!135 &99598636
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -242,6 +243,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99598633}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &99598639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99598633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a322f5b1738504f843844e39c19352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 14
 --- !u!1 &256689091
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +268,7 @@ GameObject:
   - component: {fileID: 256689095}
   - component: {fileID: 256689094}
   - component: {fileID: 256689093}
+  - component: {fileID: 256689097}
   - component: {fileID: 256689092}
   m_Layer: 0
   m_Name: Earth
@@ -274,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yawRotationPerSecond: 20
+  yawRotationPerSecond: 180
 --- !u!135 &256689093
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -360,8 +375,21 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1008144465}
-  m_Father: {fileID: 1813397816}
+  m_Father: {fileID: 1204270205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &256689097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256689091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a322f5b1738504f843844e39c19352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 30
 --- !u!1 &265042195
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +402,7 @@ GameObject:
   - component: {fileID: 265042200}
   - component: {fileID: 265042199}
   - component: {fileID: 265042198}
+  - component: {fileID: 265042201}
   - component: {fileID: 265042197}
   m_Layer: 0
   m_Name: Pluto
@@ -395,7 +424,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1813397816}
+  m_Father: {fileID: 1204270205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &265042197
 MonoBehaviour:
@@ -481,6 +510,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265042195}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &265042201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265042195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a322f5b1738504f843844e39c19352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 5
 --- !u!1 &287436726
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +629,7 @@ GameObject:
   - component: {fileID: 362449302}
   - component: {fileID: 362449301}
   - component: {fileID: 362449300}
+  - component: {fileID: 362449303}
   - component: {fileID: 362449299}
   m_Layer: 0
   m_Name: Mars
@@ -608,7 +651,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1813397816}
+  m_Father: {fileID: 1204270205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &362449299
 MonoBehaviour:
@@ -622,7 +665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yawRotationPerSecond: 20
+  yawRotationPerSecond: 150
 --- !u!135 &362449300
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -694,6 +737,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362449297}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &362449303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362449297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a322f5b1738504f843844e39c19352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 24
 --- !u!1 &442091379
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +762,7 @@ GameObject:
   - component: {fileID: 442091384}
   - component: {fileID: 442091383}
   - component: {fileID: 442091382}
+  - component: {fileID: 442091385}
   - component: {fileID: 442091381}
   m_Layer: 0
   m_Name: Uranus
@@ -727,7 +784,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1813397816}
+  m_Father: {fileID: 1204270205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &442091381
 MonoBehaviour:
@@ -741,7 +798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yawRotationPerSecond: 20
+  yawRotationPerSecond: 60
 --- !u!135 &442091382
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -813,6 +870,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442091379}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &442091385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442091379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a322f5b1738504f843844e39c19352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 10
 --- !u!1 &469363819
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +895,8 @@ GameObject:
   - component: {fileID: 469363824}
   - component: {fileID: 469363823}
   - component: {fileID: 469363822}
-  - component: {fileID: 469363821}
+  - component: {fileID: 469363825}
+  - component: {fileID: 469363826}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -846,21 +917,8 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1813397816}
+  m_Father: {fileID: 1204270205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &469363821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 469363819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yawRotationPerSecond: 20
 --- !u!135 &469363822
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -932,6 +990,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469363819}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &469363825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469363819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a322f5b1738504f843844e39c19352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 70
+--- !u!114 &469363826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469363819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yawRotationPerSecond: 240
 --- !u!1 &539481510
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +1028,7 @@ GameObject:
   - component: {fileID: 539481515}
   - component: {fileID: 539481514}
   - component: {fileID: 539481513}
+  - component: {fileID: 539481516}
   - component: {fileID: 539481512}
   m_Layer: 0
   m_Name: Neptune
@@ -965,7 +1050,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1813397816}
+  m_Father: {fileID: 1204270205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &539481512
 MonoBehaviour:
@@ -979,7 +1064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yawRotationPerSecond: 20
+  yawRotationPerSecond: 30
 --- !u!135 &539481513
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1051,6 +1136,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539481510}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &539481516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539481510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a322f5b1738504f843844e39c19352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 7
 --- !u!1 &561702005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,7 +1161,8 @@ GameObject:
   - component: {fileID: 561702010}
   - component: {fileID: 561702009}
   - component: {fileID: 561702008}
-  - component: {fileID: 561702007}
+  - component: {fileID: 561702011}
+  - component: {fileID: 561702012}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -1084,21 +1183,8 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1813397816}
+  m_Father: {fileID: 1204270205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &561702007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561702005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yawRotationPerSecond: 20
 --- !u!135 &561702008
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1170,6 +1256,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561702005}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &561702011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561702005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a322f5b1738504f843844e39c19352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 90
+--- !u!114 &561702012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561702005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yawRotationPerSecond: 270
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1388,7 @@ GameObject:
   - component: {fileID: 924750924}
   - component: {fileID: 924750923}
   - component: {fileID: 924750922}
+  - component: {fileID: 924750925}
   - component: {fileID: 924750921}
   m_Layer: 0
   m_Name: Saturn
@@ -1297,7 +1410,7 @@ Transform:
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1813397816}
+  m_Father: {fileID: 1204270205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &924750921
 MonoBehaviour:
@@ -1311,7 +1424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yawRotationPerSecond: 20
+  yawRotationPerSecond: 80
 --- !u!135 &924750922
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1383,6 +1496,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924750919}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &924750925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924750919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a322f5b1738504f843844e39c19352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 12
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1595,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 16, z: 0}
+  m_LocalPosition: {x: 0, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1487,7 +1613,6 @@ GameObject:
   - component: {fileID: 1008144469}
   - component: {fileID: 1008144468}
   - component: {fileID: 1008144467}
-  - component: {fileID: 1008144466}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -1510,19 +1635,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 256689096}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1008144466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008144464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 363c44bccd0f4584e9c573ba2ffd1a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yawRotationPerSecond: 20
 --- !u!135 &1008144467
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1594,6 +1706,46 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008144464}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1204270204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1204270205}
+  m_Layer: 0
+  m_Name: Planets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1204270205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204270204}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 561702006}
+  - {fileID: 469363820}
+  - {fileID: 256689096}
+  - {fileID: 362449298}
+  - {fileID: 99598634}
+  - {fileID: 924750920}
+  - {fileID: 442091380}
+  - {fileID: 539481511}
+  - {fileID: 265042196}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1813397812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,16 +1849,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 561702006}
-  - {fileID: 469363820}
-  - {fileID: 256689096}
-  - {fileID: 362449298}
-  - {fileID: 99598634}
-  - {fileID: 924750920}
-  - {fileID: 442091380}
-  - {fileID: 539481511}
-  - {fileID: 265042196}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1813397817
@@ -1729,4 +1872,5 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 1813397816}
+  - {fileID: 1204270205}
   - {fileID: 287436728}
